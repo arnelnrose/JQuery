@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery Events | Hide & Show</title>
+</head>
+<body>
+
+    <h1 id="header1">Hello World!</h1>
+    <h1 id="header2">I'm Arnel Rose</h1>
+
+    <button id="btn-hide">hide me!</button>
+    <button id="btn-show">show me!</button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"></script>
+     
+    <script>
+        var header1 = $("#header1");
+        $(document).ready(function(){
+
+            //Header 1 - Hide & Show
+        $("#btn-hide").click(function(){
+            header1.hide();
+        });
+        $("#btn-show").click(function(){
+            header1.show();
+        });
+    });
+    </script>
+
+</html>
