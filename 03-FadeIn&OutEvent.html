@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery Events | Fade In & Out Animation</title>
+</head>
+
+<body>
+    <h1 id="header1">Hello World!</h1>
+    <h1 id="header2">I'm Arnel Rose</h1>
+
+    <button id="btn-fade-out">Fade Out</button>
+    <button id="btn-fade-in">Fade In</button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"></script>
+
+    <script>
+        var header1 = $("#header1");
+        $(document).ready(function () {
+
+            $("#btn-fade-out").click(function () {
+                header1.fadeOut(300);
+            });
+
+            $("#btn-fade-in").click(function () {
+                header1.fadeIn(300);
+            });
+        });
+    </script>
+</body>
+
+</html>

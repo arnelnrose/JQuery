@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery Events | Toggle Animation</title>
+</head>
+
+<body>
+    <h1 id="header1">Hello World!</h1>
+
+    <select id="select">
+        <option value="option1">Option1</option>
+        <option value="option2">Option2</option>
+        <option value="option3">Option3</option>
+    </select>
+
+    <select id="select2">
+        <!-- <option value="option1">Option 1</option>
+        <option value="option2">Option 2</option>
+        <option value="option3">Option 3</option> -->
+    </select>
+
+    <label for="name">Full Name</label>
+    <input id="name" type="text" name="name">
+    <button id="btn">Click</button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"></script>
+
+    <script>
+
+        var header1 = $('#header1');
+        var inputName = $("#name");
+        var select = $('#select');
+
+        $('#select').on('change', function () {
+            var select_value = this.value;
+
+            if (select_value == 'option1') {
+                $('#select2').html(`        
+                <option value="option4">Option4</option>
+                <option value="option5">Option5</option>
+                <option value="option6">Option6</option>
+                `)
+            }
+        });
+    </script>
+</body>
+
+</html>

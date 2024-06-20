@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery Events | Toggle Animation</title>
+</head>
+
+<body>
+    <h1 id="header1">Hello World!</h1>
+
+    <label for="name">Full Name</label>
+    <input id="name" type="text" name="name">
+    <button id="btn">Click</button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"></script>
+
+    <script>
+        var header1 = $('#header1');
+        var inputName = $("#name");
+        $('#btn').on('click', function () {
+            header1.text('Arnel Rose');
+            // header1.html('<i>Arnel Rose</i>'); // Set the value to html tag
+
+        });
+    </script>
+</body>
+
+</html>
